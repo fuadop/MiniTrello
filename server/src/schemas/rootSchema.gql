@@ -1,0 +1,25 @@
+type RootQuery {
+    users: [User!]!
+}
+
+type RootMutation {
+    createUser(reg: UserReg): User
+}
+
+input UserReg {
+    username: String!
+    passowrd: String!
+}
+
+type User {
+    _id: ID
+    username: String!
+    passowrd: String!
+}
+
+#root schema
+schema {
+    query: RootQuery
+    mutation: RootMutation
+}
+
