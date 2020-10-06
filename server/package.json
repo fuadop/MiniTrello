@@ -4,19 +4,21 @@
   "description": "graphql server for trello clone",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src/index.js --out-file dist/index.js",
     "dev:start": "nodemon src/index.js --exec babel-node --ext js,graphql"
   },
   "repository": "https://github.com/fuadop/MiniTrello.git",
   "author": "Fuad Olatunji",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.4.0",
     "graphql-yoga": "^1.18.3",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-node": "^0.0.1-security",
     "babel-preset-env": "^1.7.0"
   }
 }
